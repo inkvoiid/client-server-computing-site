@@ -121,7 +121,6 @@ nav ul
 nav li
 {
     display: inline-flex;
-    border-radius: 0.5rem;
     padding: 0.3rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -130,12 +129,23 @@ nav li
 
 nav li a
 {
+    border-radius: 1.5rem;
     padding: 0.5rem 0.75rem;
     color: var(--text);
     background-color: transparent;
 }
 nav li a:hover
 {
+    transition: all 0.15s ease-in-out;
+    border-radius: 0.5rem;
     background-color: #ffffff50;
     text-decoration: none;
+}
+
+nav li a.active
+{
+    border-radius: 0.5rem;
+    background-color: #ffffffdb;
+    color: #8dd0fc;
+    
 }
