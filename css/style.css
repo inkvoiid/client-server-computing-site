@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --sitebg: linear-gradient(90deg, #ddb4f6 0%, #8dd0fc 100%);
-  --navbg: linear-gradient(45deg, #8dd0fc 0%, #9f94ff 100%);
-  --h3bg: linear-gradient(45deg, #ddb4f6 0%, #8dd0fc 100%);
+  --sitebg: #2c2c2c;
+  --navbg: linear-gradient(45deg, #8dd0fc 0%, #9f94ff 30%, #dca2ff 80%);
+  --h3bg: linear-gradient(45deg, #dca2ff 0%, #8dd0fc 100%);
   --h4bg: linear-gradient(45deg, #f9cdc3 0%, #facefb 100%);
   --bg: rgb(29, 29, 29);
   --text: white;
@@ -97,7 +97,7 @@ img
 header
 {
     position: sticky;
-    top: -3.25rem;
+    top: -3.1rem;
     background: var(--navbg);
     margin: 3rem 5vw;
     padding: 0rem 3rem;
@@ -148,4 +148,40 @@ nav li a.active
     background-color: #ffffffdb;
     color: #8dd0fc;
     
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #8dd0fc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.dropdown-content a
+{
+    display: block;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.dropdown-content a:hover
+{
+  background-color: #ffffff50;
+  text-decoration: none;
 }

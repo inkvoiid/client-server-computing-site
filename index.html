@@ -13,13 +13,18 @@
         <h1>Client Server Web Development Assignment 1</h1>
         <ul>
           <li><a href="/" class="active">Home</a></li>
-          <li style="font-weight: 500">|</li>
-          <li><a href="/pages/angular.html">Angular</a></li>
-          <li><a href="/pages/aurelia.html">Aurelia</a></li>
-          <li><a href="/pages/lit.html">Lit</a></li>
-          <li><a href="/pages/reactnative.html">React Native</a></li>
-          <li><a href="/pages/svelte.html">Svelte</a></li>
-          <li><a href="/pages/vue.html">Vue</a></li>
+          <div class="dropdown">
+            <li><a href="#">Frameworks ⏷</a></li>
+            <div class="dropdown-content">
+              <a href="/pages/angular.html">Angular</a>
+              <a href="/pages/aurelia.html">Aurelia</a>
+              <a href="/pages/lit.html">Lit</a>
+              <a href="/pages/reactnative.html">React Native</a>
+              <a href="/pages/svelte.html">Svelte</a>
+              <a href="/pages/vue.html">Vue</a>
+            </div>
+          </div>
+          <li><a href="#">SPA Comparison</a></li>
         </ul>
       </nav>
     </header>
@@ -27,7 +32,7 @@
     <main>
       <article>
         <h2>Philosophy of Client-Server Computing</h2>
-        <section style="display: flex; gap: 2rem;">
+        <section style="display: flex; gap: 2rem">
           <div>
             <h3>What is Client-Server Computing</h3>
             <p>
@@ -40,16 +45,24 @@
             <p>See Figure 1 for a visual example of Client-Server Computing.</p>
             <p>
               Client-Server Computing distributes tasks between the client and a
-              daemon (a computer designed to only run server side tasks). The
-              client sends a request for information and the server returns a
-              response. This allows many clients to connect to a website and
-              send requests to a central server.
+              server. The client sends a request for information and the server
+              returns a response. This allows many clients to connect to a
+              central server and send requests for information, which the server
+              can then respond to.
+            </p>
+            <p>
+              A very common example of Client-Server Computing is the Internet.
+              When you visit a website, your browser is the client and the
+              server is the web server the website is hosted on. When you
+              request a page, the web server responds with the page data, which
+              can then be displayed by your web browser.
             </p>
           </div>
 
           <div class="ref-img">
             <p><b>Figure 1</b><br /><i>Client-Server Model</i></p>
-            <img width="100%"
+            <img
+              width="100%"
               src="media/images/client_server.jpg"
               alt="Figure 1 - Client-Server Model"
             />
@@ -62,7 +75,12 @@
           <p>
             Client-Server Computing has many uses, such as Web Servers, Email
             Servers and File Servers. This is because they allow the data to be
-            stored on the server while clients
+            stored on the server, which can be accessed by many clients. This
+            means that the server can handle a large number of clients, and the
+            clients can access the data without having to store it locally. This
+            is also why Client-Server Computing is used in the Internet, as it
+            allows many clients to request the same data from a centralised
+            server.
           </p>
         </section>
 
@@ -75,19 +93,22 @@
 
           <h4>Increase in Network Speeds</h4>
           <p>
-            The increase in network speeds has means that the client and server
-            can request and respond much faster. This has also changed how
-            content
+            The increase in network speeds has allowed for faster request and
+            response times between the client and server. This has allowed for
+            more complex websites/web apps to be developed, and for more clients
+            to be connected to the server.
           </p>
 
           <h4>Scalability</h4>
           <p>
             The fact that the Client-Server model only has to scale on the
             server side to handle the capacity of users means it can be easily
-            adapted.
+            adapted to handle more users. This is because the server can be
+            scaled up by adding more servers to the network, which can then
+            handle more clients.
           </p>
 
-          <h4>Advancing in computer resources</h4>
+          <h4>Advances in Computer Resources</h4>
           <p>
             As computers have become increasingly complex and interconnected,
             the Client-Server model has become widely adopted. Clients aren't
@@ -102,6 +123,8 @@
             Advantages and Disadvantages of different client-server
             architectures
           </h3>
+          <p></p>
+          <h4>Thick Client Computing</h4>
           <p>
             Thick Client Computing is a style of Client-Server Computing in
             which the client does most of the processing and data storage
@@ -110,9 +133,10 @@
             isn't recommended for mobile or remote clients, as they aren't as
             powerful.
           </p>
+          <h4>Thin Client Computing</h4>
           <p>
             Thin Client Computing is another style of Client-Server Computing
-            that relys mainly on the server to process data and
+            that relys mainly on the server to process data and store it. This is because the client is usually a mobile device, which doesn't have the processing power to do this. This means that the client can be used anywhere, and the server can be scaled up to handle more clients.
           </p>
         </section>
       </article>
