@@ -13,13 +13,18 @@
         <h1>Client Server Web Development Assignment 1</h1>
         <ul>
           <li><a href="/">Home</a></li>
-          <li style="font-weight: 500">|</li>
-          <li><a href="/pages/angular.html" class="active">Angular</a></li>
-          <li><a href="/pages/aurelia.html">Aurelia</a></li>
-          <li><a href="/pages/lit.html">Lit</a></li>
-          <li><a href="/pages/reactnative.html">React Native</a></li>
-          <li><a href="/pages/svelte.html">Svelte</a></li>
-          <li><a href="/pages/vue.html">Vue</a></li>
+          <div class="dropdown">
+            <li><a href="#" class="active">Frameworks <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+            <div class="dropdown-content">
+              <a href="/pages/angular.html" class="active">Angular</a>
+              <a href="/pages/aurelia.html">Aurelia</a>
+              <a href="/pages/lit.html">Lit</a>
+              <a href="/pages/reactnative.html">React Native</a>
+              <a href="/pages/svelte.html">Svelte</a>
+              <a href="/pages/vue.html">Vue</a>
+            </div>
+          </div>
+          <li><a href="/pages/comparison.html">SPA Comparison</a></li>
         </ul>
       </nav>
     </header>
@@ -225,5 +230,6 @@
         </ul>
       </article>
     </main>
+    <script src="https://use.fontawesome.com/647627c798.js"></script>
   </body>
 </html>
