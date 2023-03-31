@@ -4,7 +4,7 @@
   --sitebg: #2c2c2c;
   --navbg: linear-gradient(45deg, #8dd0fc 0%, #9f94ff 30%, #dca2ff 80%);
   --h3bg: linear-gradient(45deg, #dca2ff 0%, #8dd0fc 100%);
-  --h4bg: linear-gradient(45deg, #f9cdc3 0%, #facefb 100%);
+  --h4bg: linear-gradient(45deg, #8dd0fc 0%, #facefb 50%);
   --bg: rgb(29, 29, 29);
   --text: white;
 }
@@ -198,4 +198,11 @@ nav li a.active
     background-color: #ffffffdb;
     color: #9f94ff;
     
+}
+
+pre {
+  background-color: #222222;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
