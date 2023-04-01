@@ -4,7 +4,6 @@
   --sitebg: #2c2c2c;
   --navbg: linear-gradient(45deg, #8dd0fc 0%, #9f94ff 30%, #dca2ff 80%);
   --h3bg: linear-gradient(45deg, #dca2ff 0%, #8dd0fc 100%);
-  --h4bg: linear-gradient(45deg, #8dd0fc 0%, #facefb 50%);
   --bg: rgb(29, 29, 29);
   --text: white;
 }
@@ -47,15 +46,10 @@ h3 {
 }
 
 h4 {
-    background: var(--h4bg);
-    color: var(--bg);
-    display: inline-flex;
-    padding: 0.3rem;
-    padding-inline: 0.5rem;
-    margin-block: 0.3rem;
-    border-radius: 0.5rem;
+    color: #ab8dfc;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 300;
+    margin-block: 0rem;
   }
 
 a {
@@ -85,6 +79,12 @@ img
     padding-left: 15px;
     list-style: none;
     padding-block: 0.5rem;
+}
+
+#references a
+{
+    color: var(--text);
+    background: none;
 }
 
 .ref-img

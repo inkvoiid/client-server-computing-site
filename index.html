@@ -66,7 +66,7 @@
           <div class="ref-img">
             <p><b>Figure 1</b><br /><i>Client-Server Model</i></p>
             <img
-              width="100%"
+              width="300px"
               src="media/images/client_server.jpg"
               alt="Figure 1 - Client-Server Model"
             />
@@ -154,15 +154,28 @@
         <section>
           <h3>What is a SPA</h3>
           <p>
-            A Single Page Application (SPA) is a type of website that consists
-            of only one page, and the content is dynamically generated when you
-            interact with the page.
+            A Single Page Application (SPA) is a web application that only uses
+            a single HTML page to display content. When a user navigates to a
+            different page on the app, the page isn't reloaded, instead
+            javascript is used to update the HTML page and injects the new
+            content into the page. Since the the entire page isn't reloaded on
+            navigation, the app feels more responsive. Parts of the site that
+            are consistent across pages, such as the navigation bar, can be
+            injected into the base HTML page, so it doesn't have to be copied
+            and pasted into every page, which makes it easier to update.
           </p>
         </section>
 
         <section>
           <h3>History and Philosophy of SPAs</h3>
-          <p></p>
+          <p>
+            The origins of the SPA are unknown, but a the technology similar to
+            the modern SPA was described in a 2002 patent entitled "Delivery of
+            data and formattiong information to allow client-side manipulation"
+            by Lucas Birdeau, Clifford Yeh, Michael Peachey and Kevin Hakman
+            (Ćwik, 2021). They were also developed to make web development
+            easier by allowing developers to reuse components across the app.
+          </p>
         </section>
 
         <section>
@@ -206,14 +219,44 @@
         <section>
           <h3>What is a REST API</h3>
           <p>
-            A Representational State Transfer API (REST API) is an interface
-            that conforms to the W3C
+            A Representational State Transfer API (REST API) is an application
+            programming interface (API) that allows data to be transmitted over
+            a standardised protocol interface like HTML (for web applications)
+            or SMTP (for email uses) for example, while conforming to the REST
+            architectural principals. REST APIs are used to perform the four
+            basic CRUD operations: create, read, update and delete.
           </p>
         </section>
 
         <section>
           <h3>Characteristics of a REST API</h3>
           <p></p>
+          <h4>Resource Based</h4>
+          <p>
+            REST APIs are resource based, so the URLs used are based on the
+            resource rather than the action taken. This means the URL is the
+            same for all the different actions that can be taken on the
+            resource. For example, the URL for a data entry is the same for when
+            you are creating, viewing, editing, or deleting the page. This makes
+            the URLs easier to understand and remember.
+          </p>
+
+          <h4>Stateless</h4>
+          <p>
+            REST APIs are stateless, which means that each request contains all
+            the information needed to complete the request. This means that the
+            server doesn't store any information about the client, which means
+            every request is independent of the previous request. (Red Hat,
+            2020).
+          </p>
+
+          <h4>Cacheable</h4>
+          <p>
+            REST APIs are cacheable, which means that the server can cache a
+            response to a request, so that if the same request is made, it can
+            just returned the already cached response, allowing for the server
+            to use it's resources more efficently, responding to other requests.
+          </p>
         </section>
 
         <section>
@@ -236,15 +279,19 @@
         <h2>References</h2>
         <ul>
           <li>
-            TutorialsPoint (n.d.). <i>Client Server Model</i> [Photograph].
-            https://www.tutorialspoint.com/data_communication_computer_network/client_server_model.htm
+            Ćwik, P. (Ed.). (2021, January 15).
+            <i
+              >Single-page application: How SPA Works and How It Differs From
+              MPA | KISS Digital.</i
+            >
+            KISS Digital.
+            <a
+              target="_blank"
+              href="https://kissdigital.com/blog/single-page-application-how-spa-works-and-how-it-differs-from-mpa"
+              >https://kissdigital.com/blog/single-page-application-how-spa-works-and-how-it-differs-from-mpa</a
+            >
           </li>
-          <li>
-            Motiso, D. (2022, November 17).
-            <i>What Is the Client-Server Model? (Components and Benefits).</i>
-            Indeed.
-            https://www.indeed.com/career-advice/career-development/what-is-client-server-model
-          </li>
+
           <li>
             Erwin. (2021, December 13).
             <i
@@ -252,7 +299,38 @@
               Plain English.</i
             >
             Medium.
-            https://javascript.plainenglish.io/how-single-page-applications-broke-the-web-design-bd18d4ddcdab
+            <a
+              target="_blank"
+              href="https://javascript.plainenglish.io/how-single-page-applications-broke-the-web-design-bd18d4ddcdab"
+              >https://javascript.plainenglish.io/how-single-page-applications-broke-the-web-design-bd18d4ddcdab</a
+            >
+          </li>
+          <li>
+            Motiso, D. (2022, November 17).
+            <i>What Is the Client-Server Model? (Components and Benefits).</i>
+            Indeed.
+            <a
+              target="_blank"
+              href="https://www.indeed.com/career-advice/career-development/what-is-client-server-model"
+              >https://www.indeed.com/career-advice/career-development/what-is-client-server-model</a
+            >
+          </li>
+          <li>
+            Red Hat. (2020, May 8).
+            <i>What is a REST API?</i>
+            <a
+              target="_blank"
+              href="https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+              >https://www.redhat.com/en/topics/api/what-is-a-rest-api</a
+            >
+          </li>
+          <li>
+            TutorialsPoint (n.d.). <i>Client Server Model</i> [Photograph].
+            <a
+              target="_blank"
+              href="https://www.tutorialspoint.com/data_communication_computer_network/client_server_model.htm"
+              >https://www.tutorialspoint.com/data_communication_computer_network/client_server_model.htm</a
+            >
           </li>
         </ul>
       </article>
