@@ -12,7 +12,18 @@
       <nav>
         <h1>Client Server Web Development Assignment 1</h1>
         <ul>
-          <li><a href="./" class="active">Home</a></li>
+          <div class="dropdown">
+            <li>
+              <a href="./" class="active"
+                >Home <i class="fa fa-caret-down" aria-hidden="true"></i
+              ></a>
+            </li>
+            <div class="dropdown-content">
+              <a href="./#Client-Server-Computing">Client-Server Computing</a>
+              <a href="./#Single-Page-Applications">Single Page Applications</a>
+              <a href="./#REST-APIs">REST APIs</a>
+            </div>
+          </div>
           <div class="dropdown">
             <li>
               <a href="#"
@@ -34,7 +45,7 @@
     </header>
 
     <main>
-      <article>
+      <article id="Client-Server-Computing">
         <h2>Philosophy of Client-Server Computing</h2>
         <section style="display: flex; gap: 2rem">
           <div>
@@ -149,7 +160,7 @@
         </section>
       </article>
 
-      <article>
+      <article id="Single-Page-Applications">
         <h2>Single Pages Applications (SPAs)</h2>
         <section>
           <h3>What is a SPA</h3>
@@ -168,13 +179,19 @@
 
         <section>
           <h3>History and Philosophy of SPAs</h3>
+          <p></p>
+          <h4>History of the SPA</h4>
           <p>
-            The origins of the SPA are unknown, but a the technology similar to
-            the modern SPA was described in a 2002 patent entitled "Delivery of
-            data and formattiong information to allow client-side manipulation"
-            by Lucas Birdeau, Clifford Yeh, Michael Peachey and Kevin Hakman
-            (Ćwik, 2021). They were also developed to make web development
-            easier by allowing developers to reuse components across the app.
+            The origins of the SPA are unknown, but an early concept of one was
+            Stuart Morris' "Self-Contained Website" called slashdotslash (Shvartzman, 2014).
+            Technology similar to the modern SPA was described in a 2002 patent
+            entitled "Delivery of data and formatting information to allow
+            client-side manipulation" by Lucas Birdeau, Clifford Yeh, Michael
+            Peachey and Kevin Hakman (Ćwik, 2021).
+          </p>
+          <h4>Philosophy of SPAs</h4>
+          <p>
+
           </p>
         </section>
 
@@ -214,7 +231,7 @@
         </section>
       </article>
 
-      <article>
+      <article id="REST-APIs">
         <h2>REST APIs</h2>
         <section>
           <h3>What is a REST API</h3>
@@ -324,6 +341,7 @@
               >https://www.redhat.com/en/topics/api/what-is-a-rest-api</a
             >
           </li>
+          <li>Shvartzman, C. (2014, November 24). <i>How to Build Single Page Applications (SPA) for mobile and tablets using MVC 4.</i> Academia.edu. <a target="_blank" href="https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4">https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4</a> </li>
           <li>
             TutorialsPoint (n.d.). <i>Client Server Model</i> [Photograph].
             <a

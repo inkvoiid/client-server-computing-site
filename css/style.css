@@ -17,6 +17,7 @@ body {
   color: var(--text);
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
+  scroll-padding-top: 2rem;
 }
 
 article {
@@ -161,7 +162,8 @@ nav li a.active
     display: none;
     position: absolute;
     top: 2.5rem;
-    width: 100%;
+    min-width: 100%;
+    width: max-content;
     background: var(--navbg);
     border-radius: 0.5rem;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
