@@ -173,7 +173,9 @@
             navigation, the app feels more responsive. Parts of the site that
             are consistent across pages, such as the navigation bar, can be
             injected into the base HTML page, so it doesn't have to be copied
-            and pasted into every page, which makes it easier to update.
+            and pasted into every page, which makes it easier to update. An
+            example of a SPA is Gmail, which only uses a single HTML page to
+            display content.
           </p>
         </section>
 
@@ -183,24 +185,26 @@
           <h4>History of the SPA</h4>
           <p>
             The origins of the SPA are unknown, but an early concept of one was
-            Stuart Morris' "Self-Contained Website" called slashdotslash (Shvartzman, 2014).
-            Technology similar to the modern SPA was described in a 2002 patent
-            entitled "Delivery of data and formatting information to allow
-            client-side manipulation" by Lucas Birdeau, Clifford Yeh, Michael
-            Peachey and Kevin Hakman (Ćwik, 2021).
+            Stuart Morris' "Self-Contained Website" called slashdotslash in 2002
+            (Shvartzman, 2014). Technology similar to the modern SPA was also
+            described later in 2002 in a US patent entitled "Delivery of data
+            and formatting information to allow client-side manipulation" by
+            Lucas Birdeau, Clifford Yeh, Michael Peachey and Kevin Hakman (Ćwik,
+            2021).
           </p>
           <h4>Philosophy of SPAs</h4>
           <p>
-
+            Single Page Applications are centered around the idea of a
+            simplistic, responsive and interactive user experience. 
           </p>
         </section>
 
         <section>
           <h3>How they work</h3>
           <p>
-            SPAs use a base webpage to load a html page the app with use and
-            then injects components into the parts of page typically using
-            javascript.
+            SPAs use a base HTML page to load the structure of the app and then
+            injects components into the parts of page using javascript. This is
+            done by using a router to determine which component injects where.
           </p>
         </section>
 
@@ -219,6 +223,20 @@
 
         <section>
           <h3>Techhnologies SPAs make use of</h3>
+          <p></p>
+          <h4>HTML, CSS and Javasript</h4>
+          <p>
+            HTML, CSS and Javascript are the building block in which the vast majority of websites are built with. SPAs are no different, and use these technologies to create the structure, visual design and functionality of the app.
+          </p>
+          <h4>REST APIs</h4>
+          <p>
+            REST APIs are used to communicate with the server and retrieve data. This is done by sending HTTP requests to the server, which then responds with the data in the form of a JSON object. This data is then used to update the HTML page.
+          </p>
+          <h4>Server-Side Frameworks</h4>
+          <p>
+            Server-side frameworks are used to create the server that the SPA communicates with. This is done by creating a server that can handle HTTP requests and respond with the data in the form of a JSON object. Frameworks can benefits SPAs by potentially improving performance and security 
+          </p>
+          <h4>URLs</h4>
           <p>
             Erwin states that underlying technologies that SPAs use like URLs
             are often artificially injected by the browser's History API; this
@@ -263,32 +281,79 @@
             REST APIs are stateless, which means that each request contains all
             the information needed to complete the request. This means that the
             server doesn't store any information about the client, which means
-            every request is independent of the previous request. (Red Hat,
+            every request is independent of the previous request (Red Hat,
             2020).
           </p>
 
           <h4>Cacheable</h4>
           <p>
-            REST APIs are cacheable, which means that the server can cache a
-            response to a request, so that if the same request is made, it can
-            just returned the already cached response, allowing for the server
-            to use it's resources more efficently, responding to other requests.
+            REST APIs are cacheable (Red Hat, 2020), which means that the server
+            can cache a response to a request, so that if the same request is
+            made, it can just returned the already cached response, allowing for
+            the server to use it's resources more efficently, responding to
+            other requests.
           </p>
         </section>
 
         <section>
           <h3>How can REST be used in SPA Development</h3>
-          <p></p>
+          <p>
+            REST APIs can be used in SPA development to provide the data for the
+            SPA. The SPA can then use the data to display the content to the
+            user. REST APIs can also be used to perform the CRUD operations on
+            the data.
+          </p>
         </section>
 
         <section>
           <h3>Where can REST be used in SPA Development</h3>
-          <p></p>
+          <p>
+            REST APIs can be used to retrieve data from a database and display
+            it to the user. They can also be used to handle the user's
+            authentication and include their access token in the API requests.
+            REST APIs can also be used to perform CRUD operations on the data
+            recieved from the database.
+          </p>
         </section>
 
         <section>
           <h3>Considerations when using a REST API as a SPA solution</h3>
           <p></p>
+          <h4>Authentication</h4>
+          <p>
+            If you decide to use a REST API as a SPA solution, you will need to
+            consider how you will handle authentication. If your REST API
+            contains sensitive data, you will need to consider how to
+            authenticate users to ensure that only authorised users can access
+            the data.
+          </p>
+          <h4>Authorisation</h4>
+          <p>
+            Another consideration to make is how you will authorise people
+            constrain their access to CRUD operations. For example, if you are
+            to use a REST API as a SPA solution for a blog, you will need to
+            consider how you will authorise people to create, read, update and
+            delete blog posts.
+          </p>
+          <h4>Security</h4>
+          <p>
+            Your REST API will need to be secure, so that it can't be tampered
+            with, such as cross-site scripting (XSS) attacks. XSS attacks are
+            when a malicious script is injected into an otherwise safe website,
+            which can be used to steal data or perform other malicious actions
+            such as stealing session cookies (Veracode, n.d.).
+          </p>
+          <h4>Versioning</h4>
+          <p>
+            When using a REST API for your SPA, you might want to make an update
+            to your API, however if the changes break the older version, people
+            who use your API will need to update their code, which can be a lot
+            of work. To avoid this, you can use versioning, which allows you to
+            make changes to your API without breaking the older version. This
+            means that people who use your API can continue to use the older
+            version until they are ready to update their code to use the newer
+            version.
+          </p>
         </section>
       </article>
 
@@ -341,13 +406,31 @@
               >https://www.redhat.com/en/topics/api/what-is-a-rest-api</a
             >
           </li>
-          <li>Shvartzman, C. (2014, November 24). <i>How to Build Single Page Applications (SPA) for mobile and tablets using MVC 4.</i> Academia.edu. <a target="_blank" href="https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4">https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4</a> </li>
+          <li>
+            Shvartzman, C. (2014, November 24).
+            <i
+              >How to Build Single Page Applications (SPA) for mobile and
+              tablets using MVC 4.</i
+            >
+            Academia.edu.
+            <a
+              target="_blank"
+              href="https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4"
+              >https://www.academia.edu/9483251/How_to_Build_Single_Page_Applications_SPA_for_mobile_and_tablets_using_MVC_4</a
+            >
+          </li>
           <li>
             TutorialsPoint (n.d.). <i>Client Server Model</i> [Photograph].
             <a
               target="_blank"
               href="https://www.tutorialspoint.com/data_communication_computer_network/client_server_model.htm"
               >https://www.tutorialspoint.com/data_communication_computer_network/client_server_model.htm</a
+            >
+          </li>
+          <li>
+            Veracode. (n.d.). <i>What is Cross-Site Scripting?</i>
+            <a target="_blank" href="https://www.veracode.com/security/xss"
+              >https://www.veracode.com/security/xss</a
             >
           </li>
         </ul>
