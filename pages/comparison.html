@@ -28,12 +28,12 @@
           </div>
           <div class="dropdown">
             <li>
-              <a href="#" class="active"
+              <a href="#"
                 >Frameworks <i class="fa fa-caret-down" aria-hidden="true"></i
               ></a>
             </li>
             <div class="dropdown-content">
-              <a href="./angular.html" class="active">Angular</a>
+              <a href="./angular.html">Angular</a>
               <a href="./aurelia.html">Aurelia</a>
               <a href="./lit.html">Lit</a>
               <a href="./reactnative.html">React Native</a>
@@ -41,7 +41,7 @@
               <a href="./vue.html">Vue</a>
             </div>
           </div>
-          <li><a href="./comparison.html">SPA Comparison</a></li>
+          <li><a href="./comparison.html" class="active">SPA Comparison</a></li>
           <li><a href="./references.html">References</a></li>
         </ul>
       </nav>
@@ -85,89 +85,6 @@
           <h3>Strengths and Weaknesses</h3>
           <p></p>
           <h4>Strengths</h4>
-          <ul>
-            <li>
-              <p>
-                The component TypeScript files are easy to understand and aren't
-                filled with confusing terms.
-              </p>
-            </li>
-            <li>
-              <p>
-                The CLI is has built in generation for components and modules.
-              </p>
-            </li>
-            <li>
-              <p>
-                The concept of modules and components is very modular, and
-                allows for parts of the app to be broken down into smaller
-                functions, which can simplify the code and make it easier to
-                understand.
-              </p>
-            </li>
-          </ul>
-
-          <h4>Weaknesses</h4>
-          <ul>
-            <li>
-              <p>
-                If you don't generate components through the CLI, you have to
-                manually add them to the app module, which can be tedious.
-              </p>
-            </li>
-            <li>
-              <p>
-                Each component is divided into 4 files, which can be confusing
-                to keep track of.
-              </p>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Example Web App</h3>
-          <p>
-            I found this framework to be difficult to get started with, but
-            after watching some YouTube tutorials, I had an understanding of the
-            concepts and I could see the benefits of using it.
-          </p>
-          <p>
-            For this framework, I made a simple site with a home page, an about
-            page and a link to a contact page to demonstrate how I handled an
-            error 404. The site was styled using very minimal Bootstrap. There
-            is a navigation bar at the top which is a component, saving me from
-            creating it on every page. The home page contained a grid of cards
-            that were generated from a JSON file I found online containing
-            Breaking Bad and Better Call Saul characters. The about page just
-            had the default pregenerated text. The contact page didn't exist so
-            it displayed the page not found page I made.
-          </p>
-          <p>
-            Here's how I used Angular *ngFor and *ngIf statements to generate
-            the cards from the JSON:
-
-            <script src="https://gist.github.com/30050248Kaleb/966aa5608352d544a50e8f8b834c4566.js"></script>
-          </p>
-
-          <h4>Gallery</h4>
-          <p>The Home Page</p>
-          <img
-            src="../media/images/angular/homepage.png"
-            alt="Homepage"
-            width="50%"
-          />
-          <p>The Contact Page</p>
-          <img
-            src="../media/images/angular/about.png"
-            alt="Homepage"
-            width="50%"
-          />
-          <p>The Error 404 Page</p>
-          <img
-            src="../media/images/angular/error404.png"
-            alt="Homepage"
-            width="50%"
-          />
         </section>
       </article>
     </main>
