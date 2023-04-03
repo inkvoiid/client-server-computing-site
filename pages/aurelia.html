@@ -35,7 +35,7 @@
             <div class="dropdown-content">
               <a href="./angular.html">Angular</a>
               <a href="./aurelia.html" class="active">Aurelia</a>
-              <a href="./lit.html">Lit</a>
+              <a href="./ember.html">Ember</a>
               <a href="./preact.html">Preact</a>
               <a href="./svelte.html">Svelte</a>
               <a href="./vue.html">Vue</a>
@@ -88,14 +88,27 @@
           <ul>
             <li>
               <p>
-                If you don't generate components through the CLI, you have to
-                manually add them to the app module, which can be tedious.
+                Importing the router into the navbar is simple and allows you to specify whether you want a route to show on the navbar or not. 
               </p>
             </li>
             <li>
               <p>
-                Each component is divided into 4 files, which can be confusing
-                to keep track of.
+                Using ternary operators for data binding and attributes is very simple and easy to read.
+              </p>
+            </li>
+            <li>
+              <p>
+                The components are clear and easy to understand, with minimal code.
+              </p>
+            </li>
+            <li>
+              <p>
+                Support for both JavaScript and TypeScript.
+              </p>
+            </li>
+            <li>
+              <p>
+                Can be used with other frameworks and libraries.
               </p>
             </li>
           </ul>
@@ -103,14 +116,12 @@
           <ul>
             <li>
               <p>
-                If you don't generate components through the CLI, you have to
-                manually add them to the app module, which can be tedious.
+                The format of the router can be confusing, as you need a name and a title for each view.
               </p>
             </li>
             <li>
               <p>
-                Each component is divided into 4 files, which can be confusing
-                to keep track of.
+                Limited documentation beyond the tutorial.
               </p>
             </li>
           </ul>
@@ -126,6 +137,8 @@
             and view routing. The app is very simple but it was a good
             introduction to Aurelia.
           </p>
+          <p>Here's the code for the app.html, which is the default Aurelia component to be injected into the index.ejs body. All component HTML files are wrapped in a template tag. Most of this code is just just dressing, the unordered list in the nav generates the navbar and the router-view tags are where the router injects views.</p>
+          <script src="https://gist.github.com/30050248Kaleb/e14621b2c43c7e6dc456cef6ab94ff13.js"></script>
           <h4>Gallery</h4>
           <p>The Home Page</p>
           <img
