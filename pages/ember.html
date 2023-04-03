@@ -52,35 +52,18 @@
         <h2>Ember</h2>
         <section style="display: flex; gap: 2rem">
           <div>
-            <h3>How it works</h3>
+            <h3>Introduction</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing eember. Unde
-              modi vero illum dignissimos soluta nam at veniam quia repellat.
-              Praesentium quia corrupti numquam nam minima amet modi voluptas
-              ratione perferendis? Numquam animi eligendi nobis earum rerum
-              molestias deleniti odio, minima quam, cum aperiam delectus
-              deserunt nihil itaque? Recusandae reiciendis laudantium nesciunt
-              similique, autem, amet ipsam nihil quasi assumenda alias, omnis
-              maiores odit repudiandae ad. Ducimus cupiditate quo a accusamus
-              asperiores perspiciatis voluptatem, quod ea quos fuga! Laborum
-              earum neque, dolor rem hic at ea quasi amet quaerat a architecto
-              voluptatum alias accusamus sequi magni officia aliquid!
-              Voluptates, nesciunt! Qui, nam!
+              EmberJS was created by Yehuda Katz, a member of the Rust Core Team, however, he lists himself as co-creator of Ember on his own site (Katz, 2015). The framework uses Handlebars as it's templating engine, which Katz also created (Katz, 2015).</p>
+              <h3>How it works</h3>
+              <p> The entry point for this is index.html, however, you can't see where the base template is injected. The body recieves a class of ember-application by default, but it is added to it somewhere that I couldn't find. application.hbs is the base template, yet there is no reference of where it will be inserted.
             </p>
           </div>
           <div>
-            <pre>
-              <code>
-                &lt;!doctype html&gt;
-                &lt;html&gt;
-
-                &lt;/html&gt;
-              </code>
-            </pre>
             <div class="ref-img">
               <p><b>Figure 1</b><br /><i>Client-Server Model</i></p>
               <img
-                width="100%"
+                width="300px"
                 src="../media/images/client_server.jpg"
                 alt="Figure 1 - Client-Server Model"
               />
@@ -95,18 +78,25 @@
           <h4>Strengths</h4>
           <ul>
             <li>
-              <p>Interactive tutorial guiding you and explaining concepts.</p>
+              <p>Use the CLI to generate routes</p>
             </li>
             <li>
-              <p>Offered in both Javascript and TypeScript</p>
+              <li>
+                <p>You can use JavaScript or TypeScript</p>
+              </li>
+              <p></p>
             </li>
           </ul>
           <h4>Weaknesses</h4>
           <ul>
             <li>
               <p>
-                Syntax can be confusing, for example using a pointer instead of
-                a for loop to repeat something.
+                Confusing injection of base template.
+              </p>
+            </li>
+            <li>
+              <p>
+                Jargon is confusing and not well explained.
               </p>
             </li>
           </ul>
