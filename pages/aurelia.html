@@ -20,7 +20,9 @@
             </li>
             <div class="dropdown-content">
               <a href="../#Client-Server-Computing">Client-Server Computing</a>
-              <a href="../#Single-Page-Applications">Single Page Applications</a>
+              <a href="../#Single-Page-Applications"
+                >Single Page Applications</a
+              >
               <a href="../#REST-APIs">REST APIs</a>
             </div>
           </div>
@@ -34,7 +36,7 @@
               <a href="./angular.html">Angular</a>
               <a href="./aurelia.html" class="active">Aurelia</a>
               <a href="./lit.html">Lit</a>
-              <a href="./reactnative.html">React Native</a>
+              <a href="./preact.html">Preact</a>
               <a href="./svelte.html">Svelte</a>
               <a href="./vue.html">Vue</a>
             </div>
@@ -52,105 +54,97 @@
           <div>
             <h3>How it works</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              modi vero illum dignissimos soluta nam at veniam quia repellat.
-              Praesentium quia corrupti numquam nam minima amet modi voluptas
-              ratione perferendis? Numquam animi eligendi nobis earum rerum
-              molestias deleniti odio, minima quam, cum aperiam delectus
-              deserunt nihil itaque? Recusandae reiciendis laudantium nesciunt
-              similique, autem, amet ipsam nihil quasi assumenda alias, omnis
-              maiores odit repudiandae ad. Ducimus cupiditate quo a accusamus
-              asperiores perspiciatis voluptatem, quod ea quos fuga! Laborum
-              earum neque, dolor rem hic at ea quasi amet quaerat a architecto
-              voluptatum alias accusamus sequi magni officia aliquid!
-              Voluptates, nesciunt! Qui, nam!
+              Aurelia offers both ESNext(Javascript) and Typescript support. It
+              boasts a powerful, reactive system that is faster than other
+              frameworks and their virtual DOMs (Aurelia, n.d.-b). Aurelia's views
+              are wrapped in Web Components, this is good because it means that
+              Aurelia can be used with other frameworks and libraries. It also
+              means Aurelia will remain compatible with future web standards (Aurelia, n.d.-c).
+            </p>
+            <p>
+              The entry point in this framework is index.ejs, instead of the
+              usual index.html. This is so it can specify the base URL from
+              Webpack and insert the Aurelia bootstrapper script tag into the
+              body of the page.
             </p>
           </div>
           <div>
-            <pre>
-              <code>
-                &lt;!doctype html&gt;
-                &lt;html&gt;
-
-                &lt;/html&gt;
-              </code>
-            </pre>
             <div class="ref-img">
-              <p><b>Figure 1</b><br /><i>Client-Server Model</i></p>
+              <p><b>Figure 3</b><br /><i>Aurelia Logo</i></p>
               <img
-                width="100%"
-                src="../media/images/client_server.jpg"
-                alt="Figure 1 - Client-Server Model"
+                width="300px"
+                src="../media/images/aurelia.svg"
+                alt="Figure 3 - Aurelia Logo"
               />
-              <p>(TutorialsPoint, n.d.).</p>
+              <p>(Aurelia, n.d.-a).</p>
             </div>
           </div>
         </section>
 
         <section>
           <h3>Strengths and Weaknesses</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde modi
-            vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
-          </p>
+          <p></p>
           <h4>Strengths</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde modi
-            vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
-          </p>
+          <ul>
+            <li>
+              <p>
+                If you don't generate components through the CLI, you have to
+                manually add them to the app module, which can be tedious.
+              </p>
+            </li>
+            <li>
+              <p>
+                Each component is divided into 4 files, which can be confusing
+                to keep track of.
+              </p>
+            </li>
+          </ul>
           <h4>Weaknesses</h4>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde modi
-            vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
-          </p>
+          <ul>
+            <li>
+              <p>
+                If you don't generate components through the CLI, you have to
+                manually add them to the app module, which can be tedious.
+              </p>
+            </li>
+            <li>
+              <p>
+                Each component is divided into 4 files, which can be confusing
+                to keep track of.
+              </p>
+            </li>
+          </ul>
         </section>
 
         <section>
           <h3>Example Web App</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde modi
-            vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
+            For Aurelia, I chose to use the JavaScript version. I followed a few
+            of the tutorials on their website. The tutorials were clear and
+            simple, and I was able to get the app working quickly. The app I
+            made combined the to-do list and hello message with a navigation bar
+            and view routing. The app is very simple but it was a good
+            introduction to Aurelia.
           </p>
+          <h4>Gallery</h4>
+          <p>The Home Page</p>
+          <img
+            src="../media/images/aurelia/home.png"
+            alt="Homepage"
+            width="50%"
+          />
+          <p>The "Hello" Message page</p>
+          <img
+            src="../media/images/aurelia/hello.png"
+            alt="Homepage"
+            width="50%"
+          />
+          <p>The To-do List Page</p>
+          <img
+            src="../media/images/aurelia/todo.png"
+            alt="Homepage"
+            width="50%"
+          />
         </section>
       </article>
     </main>
