@@ -203,6 +203,16 @@ nav li a.active
     
 }
 
+td, th {
+  border: 1px solid #ffffff11;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff11;
+}
+
 pre {
   background-color: #222222;
   padding-inline: 1rem;

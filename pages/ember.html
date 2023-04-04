@@ -54,20 +54,36 @@
           <div>
             <h3>Introduction</h3>
             <p>
-              EmberJS was created by Yehuda Katz, a member of the Rust Core Team, however, he lists himself as co-creator of Ember on his own site (Katz, 2015). The framework uses Handlebars as it's templating engine, which Katz also created (Katz, 2015).</p>
-              <h3>How it works</h3>
-              <p> The entry point for this is index.html, however, you can't see where the base template is injected. The body recieves a class of ember-application by default, but it is added to it somewhere that I couldn't find. application.hbs is the base template, yet there is no reference of where it will be inserted.
+              EmberJS was created by Yehuda Katz, a member of the Rust Core
+              Team, however, he lists himself as co-creator of Ember on his own
+              site (Katz, 2015). The framework uses Handlebars as it's
+              templating engine, which Katz also created (Katz, 2015).
+            </p>
+            <h3>How it works</h3>
+            <p>
+              The entry point for this is index.html, however, you can't see
+              where the base template is injected. The body recieves a class of
+              ember-application by default, but it is added to it somewhere that
+              I couldn't find. application.hbs is the base template, yet there
+              is no reference of where it will be inserted.
+            </p>
+            <p>
+              Templates that are routed are placed after/inside of
+              application.hbs. If you would like to create a template for the
+              home page to display after the application.hbs, it has to be
+              called index, which isn't mentioned anywhere, and you aren't shown
+              a way to automatically populate the navbar with the templates.
             </p>
           </div>
           <div>
             <div class="ref-img">
-              <p><b>Figure 1</b><br /><i>Client-Server Model</i></p>
+              <p><b>Figure 4</b><br /><i>Ember Logo</i></p>
               <img
                 width="300px"
-                src="../media/images/client_server.jpg"
-                alt="Figure 1 - Client-Server Model"
+                src="../media/images/ember.svg"
+                alt="Figure 4 - Ember Logo"
               />
-              <p>(TutorialsPoint, n.d.).</p>
+              <p>(Ember.js, n.d.).</p>
             </div>
           </div>
         </section>
@@ -81,23 +97,25 @@
               <p>Use the CLI to generate routes</p>
             </li>
             <li>
-              <li>
-                <p>You can use JavaScript or TypeScript</p>
-              </li>
-              <p></p>
+              <p>You can use JavaScript or TypeScript</p>
             </li>
           </ul>
           <h4>Weaknesses</h4>
           <ul>
             <li>
-              <p>
-                Confusing injection of base template.
-              </p>
+              <p>Confusing injection of base template.</p>
+            </li>
+            <li>
+              <p>Jargon is confusing, inconsistent and not well explained.</p>
             </li>
             <li>
               <p>
-                Jargon is confusing and not well explained.
+                Tutorials don't teach you useful concepts and don't explain what
+                the code is doing.
               </p>
+            </li>
+            <li>
+              <p>Documentation is hard to navigate.</p>
             </li>
           </ul>
         </section>
@@ -105,19 +123,35 @@
         <section>
           <h3>Example Web App</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing eember. Unde
-            modi vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
+            Learning Ember was probably the most difficult of the frameworks I
+            have tried so far. The documentation is not very good, and the
+            jargon is confusing and inconsistent. I found it difficult to find a
+            good example of the router setup, and the documentation for the
+            router was not very helpful. I made a website with Ember that was
+            similar to the first tutorial they offer, generating content for
+            each item in an array. Instead of using a string array of two
+            scientists, I used a JSON file I found on the internet that
+            contained a list of all the enchantments in Minecraft. I followed
+            the tutorial to create a dynamic alert linked to a button click
+            event. To keep the site consistent with the others I've tested, I
+            added a router which had a navigation bar that stays at the top of
+            every page.
           </p>
+          <p></p>
+          <script src="https://gist.github.com/30050248Kaleb/e14621b2c43c7e6dc456cef6ab94ff13.js"></script>
+          <h4>Gallery</h4>
+          <p>The Home Page</p>
+          <img
+            src="../media/images/ember/home.png"
+            alt="Homepage"
+            width="50%"
+          />
+          <p>The Minecraft Enchantments page</p>
+          <img
+            src="../media/images/ember/enchantments.png"
+            alt="Homepage"
+            width="50%"
+          />
         </section>
       </article>
     </main>
