@@ -115,7 +115,7 @@
             to be connected to the server.
           </p>
 
-          <h4>Scalabiembery</h4>
+          <h4>Scalability</h4>
           <p>
             The fact that the Client-Server model only has to scale on the
             server side to handle the capacity of users means it can be easily
@@ -145,7 +145,7 @@
             Thick Client Computing is a style of Client-Server Computing in
             which the client does most of the processing and data storage
             client-side. This makes the computing feel responsive and have
-            better capabiembery with a limited network connection. However, it
+            better capability with a limited network connection. However, it
             isn't recommended for mobile or remote clients, as they aren't as
             powerful.
           </p>
@@ -204,8 +204,9 @@
           <h3>How they work</h3>
           <p>
             SPAs use a base HTML page to load the structure of the app and then
-            injects components into the parts of the page using javascript. This is
-            done by using a router to determine which component injects where.
+            injects components into the parts of the page using javascript. This
+            is done by using a router to determine which component injects
+            where.
           </p>
         </section>
 
@@ -228,9 +229,9 @@
           <h4>HTML, CSS and Javascript/Typescript</h4>
           <p>
             HTML, CSS and Javascript are the building blocks with which the vast
-            majority of websites are built. SPAs are no different, and use
-            these technologies to create the structure, visual design and
-            functionaembery of the app.
+            majority of websites are built. SPAs are no different, and use these
+            technologies to create the structure, visual design and
+            functionality of the app.
           </p>
           <h4>REST APIs</h4>
           <p>
@@ -252,11 +253,41 @@
             Erwin states that underlying technologies that SPAs use like URLs
             are often artificially injected by the browser's History API; this
             seems like a hybrid state instead of a long-term solution. The
-            concept of URLs makes sense for document-based websites but needs
-            to be rethought from the perspective of SPAs. If not taken care of,
+            concept of URLs makes sense for document-based websites but needs to
+            be rethought from the perspective of SPAs. If not taken care of,
             simple features like the forward and back buttons can break the app,
             resulting in a bad user experience (Erwin, 2021).
           </p>
+        </section>
+
+        <section>
+          <h3>Strengths and Weaknesses</h3>
+          <p></p>
+          <h4>Strengths</h4>
+          <p>
+            SPAs seem faster and more responsive than typical websites because
+            the entire page isn't reloaded anytime a request is made from the
+            client. Page elements like the header and footer can be reused
+            across many pages, eliminating inconsistencies that could arise when
+            you forget to update certain instances of them in a traditional
+            website. Reusable components also reduce the development time of
+            sites, because you aren't updating each instance of it when
+            implementing new features.
+          </p>
+          <h4>Weaknesses</h4>
+          <p>
+            Most SPAs aren't supported on older browsers and/or browsers that
+            don't support javascript, this can drive away certain groups of
+            people, as they can't view any part of your site. They also can be
+            difficult for search engines to index, meaning your site might not
+            appear on a search engine like Google, which will make it harder to
+            find your site.
+          </p>
+        </section>
+
+        <section>
+          <h3>Business Problems They Are Best Suited To Solve</h3>
+          <p>SPAs are best suited for sites that are data-driven, such as real estate sites or online stores. This is because they can be easily updated to display a lot of information which can be formatted by a template. They are also suited for keeping the flow, for example: stores where you can browse the store, add items to your cart and then checkout without having to reload the page once.</p>
         </section>
       </article>
 
@@ -300,9 +331,9 @@
           <p>
             REST APIs are cacheable (Red Hat, 2020), which means that the server
             can cache a response to a request, so that if the same request is
-            made, it can just return the already cached response, allowing
-            the server to use its resources more efficiently, responding to
-            other requests.
+            made, it can just return the already cached response, allowing the
+            server to use its resources more efficiently, responding to other
+            requests.
           </p>
         </section>
 
@@ -311,8 +342,8 @@
           <p>
             REST APIs can be used in SPA development to provide the data for the
             SPA. The SPA can then use the data to display the content to the
-            user. REST APIs can also be used to perform CRUD operations on
-            the data.
+            user. REST APIs can also be used to perform CRUD operations on the
+            data.
           </p>
         </section>
 
@@ -340,8 +371,8 @@
           </p>
           <h4>Authorisation</h4>
           <p>
-            Another consideration to make is how you will authorise people
-            to constrain their access to CRUD operations. For example, if you are
+            Another consideration to make is how you will authorise people to
+            constrain their access to CRUD operations. For example, if you are
             to use a REST API as a SPA solution for a blog, you will need to
             consider how you will authorise people to create, read, update and
             delete blog posts.
