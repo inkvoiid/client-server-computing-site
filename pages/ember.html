@@ -55,17 +55,17 @@
             <h3>Introduction</h3>
             <p>
               EmberJS was created by Yehuda Katz, a member of the Rust Core
-              Team, however, he lists himself as co-creator of Ember on his own
-              site (Katz, 2015). The framework uses Handlebars as it's
+              Team, however, he lists himself as a co-creator of Ember on his
+              own site (Katz, 2015). The framework uses Handlebars as its
               templating engine, which Katz also created (Katz, 2015).
             </p>
             <h3>How it works</h3>
             <p>
               The entry point for this is index.html, however, you can't see
-              where the base template is injected. The body recieves a class of
+              where the base template is injected. The body receives a class of
               ember-application by default, but it is added to it somewhere that
               I couldn't find. application.hbs is the base template, yet there
-              is no reference of where it will be inserted.
+              is no reference to where it will be inserted.
             </p>
             <p>
               Templates that are routed are placed after/inside of
@@ -103,7 +103,7 @@
           <h4>Weaknesses</h4>
           <ul>
             <li>
-              <p>Confusing injection of base template.</p>
+              <p>Confusing injection of the base template.</p>
             </li>
             <li>
               <p>Jargon is confusing, inconsistent and not well explained.</p>
@@ -134,10 +134,19 @@
             contained a list of all the enchantments in Minecraft. I followed
             the tutorial to create a dynamic alert linked to a button click
             event. To keep the site consistent with the others I've tested, I
-            added a router which had a navigation bar that stays at the top of
+            added a router that has a navigation bar that stays at the top of
             every page.
           </p>
-          <p>The code example below is the of the base template (application.hbs), the template for the enchantments view, and the enchantment list module. The enchantments view is placed under the outlet handlebar tag, and the enchantment-list module (which have to be named in kebab case, but referenced in pascal case) is referenced in the enchantment view, with data passed in from the view's JavaScript file. The enchantment-list module's JavaScript file also has a method that displays an alert with parameters inserted.</p>
+          <p>
+            The code example below is of the base template (application.hbs),
+            the template for the enchantments view, and the enchantment list
+            module. The enchantments view is placed under the outlet handlebar
+            tag, and the enchantment-list module (which has to be named in
+            kebab case, but referenced in pascal case) is referenced in the
+            enchantment view, with data passed in from the view's JavaScript
+            file. The enchantment-list module's JavaScript file also has a
+            method that displays an alert with parameters inserted.
+          </p>
           <script src="https://gist.github.com/30050248Kaleb/a44ff97a936513a05e362702df60a724.js"></script>
           <h4>Gallery</h4>
           <p>The Home Page</p>
