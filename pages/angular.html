@@ -70,7 +70,11 @@
               have their own HTML template files, which are referenced in the
               component's typescript file. The component's typescript file
               contains the logic for the component, which can also include
-              variables and a stylesheet.
+              variables and a stylesheet. Angular uses a virtual DOM, which is
+              good because they are more efficient than regular DOMs. This is
+              because unlike regular DOMs, they clone the current DOM, make all
+              the changes and then compare the two and only makes the changes
+              where they differ.
             </p>
           </div>
           <div>
@@ -118,7 +122,8 @@
           <ul>
             <li>
               <p>
-                Steep learning curve due to being complex. It took me a while to understand the concepts.
+                Steep learning curve due to being complex. It took me a while to
+                understand the concepts.
               </p>
             </li>
             <li>
