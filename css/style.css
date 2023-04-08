@@ -203,6 +203,16 @@ nav li a.active
     
 }
 
+.indent
+{
+   padding-inline: 2rem;
+}
+
+.indent h4
+{
+  color: plum;
+}
+
 td, th {
   border: 1px solid #ffffff11;
   text-align: left;

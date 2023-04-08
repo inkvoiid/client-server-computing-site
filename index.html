@@ -136,25 +136,62 @@
 
         <section>
           <h3>
-            Advantages and Disadvantages of different client-server
-            architectures
+            Advantages and Disadvantages of Different Client-Server
+            Architectures
           </h3>
           <p>
-            There are different ways to set up your client-server interactions,
-            and they all have their advantages and disadvantages.
+            There are different ways to structure your client-server
+            interactions, and they all have their advantages and disadvantages.
           </p>
           <h4>1 Tier Architecture</h4>
           <p>
             1 Tier Architecture is the most basic style of Client-Server
-            Computing. It is where the client and server are the same device.
+            Computing. It is where the client and server are on the same device.
             This makes the connection trustworthy as the presentation, business
-            and data layer (Sugandhi, 2023).
+            and data layer are all on your local machine, however, it can be
+            difficult for the server to do all three tasks if there are a lot of
+            users connected (Sugandhi, 2023). This kind of system is fine for a
+            simple application that doesn't need to handle a lot of users, such
+            as a local music player.
           </p>
           <h4>2 Tier Architecture</h4>
           <p>
-            2 Tier Architecture is where the client and server are separate but
-            on the same network. This is usually used for small applications,
-            such as a calculator.
+            2 Tier Architecture is where the user interface is stored on the
+            client system and the server stores the databases (Sugandhi, 2023).
+            This means that many clients can all connect to the server and
+            access the same data. The presentation layer is stored on the client
+            and the data layer is stored on the server (Sugandhi, 2023). The
+            business layer can either be stored on the client or the server. If
+            it's on the client, it's called a "thick client" because the
+            processing is done client-side, and if it's on the server, it's
+            called a "thin client" because the server does the processing.
+          </p>
+          <div class="indent">
+            <h4>Thick Client Computing</h4>
+            <p>
+              Thick Client Computing (also known as a desktop, fat or heavy
+              client) is a style of Client-Server Computing in which the client
+              does most of the processing and data storage client-side
+              (Parallels, 2021). This makes the client feel responsive and have
+              better capability with a limited network connection and is ideal
+              if the server is slow. However, it isn't recommended for mobile or
+              remote clients, as they don't have the processing power or memory
+              capacity to run complex actions.
+            </p>
+            <h4>Thin Client Computing</h4>
+            <p>
+              Thin Client Computing is another style of Client-Server Computing
+              that relies mainly on a central server to connect to, to process
+              data and store it. This is because the client is usually a mobile
+              device, which doesn't have the processing power to do this. This
+              means that the client can be used anywhere, and the server can be
+              scaled up to handle more clients.
+            </p>
+          </div>
+          <p>
+            2 Tier Architecture is the fastest client-server architecture
+            because the client and server are in direct communication with each
+            other (Sugandhi, 2023).
           </p>
           <h4>3 Tier Architecture</h4>
           <p>
@@ -167,24 +204,6 @@
             N Tier Architecture is where the client and server are separate and
             on different networks. This is usually used for small applications,
             such as a calculator.
-          </p>
-          <h4>Thick Client Computing</h4>
-          <p>
-            Thick Client Computing is a style of Client-Server Computing in
-            which the client does most of the processing and data storage
-            client-side. This makes the computing feel responsive and have
-            better capability with a limited network connection. However, it
-            isn't recommended for mobile or remote clients, as they aren't as
-            powerful.
-          </p>
-          <h4>Thin Client Computing</h4>
-          <p>
-            Thin Client Computing is another style of Client-Server Computing
-            that relies mainly on the server to process data and store it. This
-            is because the client is usually a mobile device, which doesn't have
-            the processing power to do this. This means that the client can be
-            used anywhere, and the server can be scaled up to handle more
-            clients.
           </p>
         </section>
       </article>
