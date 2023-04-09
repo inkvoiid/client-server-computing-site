@@ -62,11 +62,16 @@
             <p>
               Aurelia offers both ESNext(Javascript) and Typescript support. It
               boasts a powerful, reactive system that is faster than other
-              frameworks and their virtual DOMs (Aurelia, n.d.-b). Aurelia's
+              frameworks and their virtual DOMs (Aurelia, n.d.-b). This is
+              because Aurelia uses a templating engine, which uses an
+              obeservable-based binding system, which means that the UI
+              subscribes to the event in which the data is changed, and
+              vice-versa (Aurelia, n.d.-c). This means that on either end, if
+              the data is changed, the other side knows about it. Aurelia's
               views are wrapped in Web Components, this is good because it means
               that Aurelia can be used with other frameworks and libraries. It
               also means Aurelia will remain compatible with future web
-              standards (Aurelia, n.d.-c).
+              standards (Aurelia, n.d.-d).
             </p>
             <p>
               The entry point in this framework is index.ejs, instead of the

@@ -93,7 +93,7 @@
               <td>No</td>
               <td>No</td>
               <td>No</td>
-              <td>No</td>
+              <td>Yes</td>
               <td>Yes</td>
               <td>Yes</td>
             </tr>
@@ -102,11 +102,47 @@
               <td>Yes</td>
               <td>Yes</td>
               <td>Yes</td>
-              <td>Yes</td>
+              <td>Not Natively</td>
               <td>No</td>
               <td>No</td>
             </tr>
+            <tr>
+              <th>Uses a virtual DOM</th>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
           </table>
+
+          <br />
+
+          <h4>Justification</h4>
+          <p>
+            All of the frameworks I looked at use both JavaScript and
+            TypeScript, the only exception being Angular, which doesn't
+            recommend using JavaScript. This is because Angular is built on
+            TypeScript, so technically you can, but it isn't recommended. Only
+            half of the frameworks I looked at use single file components, this
+            is just due to how they are built. Notably, the three frameworks
+            that don't support single file components are the only ones that
+            allow you to generate components through the CLI natively. This
+            could be because the frameworks that support single file components
+            don't see the need to generate one file through the CLI. Preact is
+            the only framework that supports generating components through the
+            CLI, but not natively, this could be because of what I just
+            mentioned with not needing to generate single files thorugh the CLI.
+            Only Ember, Preact and Vue use a virtual DOM, this is because most
+            of the other frameworks have their own way of rendering the DOM.
+            Angular just uses the real DOM, which is why it can be slower.
+            Aurelia uses a templating engine, which means that the UI subscribes
+            to the event in which data is changed, and vice-versa (Aurelia,
+            n.d.-c). Svelte doesn't use a virtual DOM because it converts the
+            components into code that can "surgically" update the DOM (Harris,
+            2019).
+          </p>
         </section>
       </article>
 

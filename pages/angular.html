@@ -70,11 +70,7 @@
               have their own HTML template files, which are referenced in the
               component's typescript file. The component's typescript file
               contains the logic for the component, which can also include
-              variables and a stylesheet. Angular uses a virtual DOM, which is
-              good because they are more efficient than regular DOMs. This is
-              because unlike regular DOMs, they clone the current DOM, make all
-              the changes and then compare the two and only makes the changes
-              where they differ.
+              variables and a stylesheet.
             </p>
           </div>
           <div>
@@ -99,11 +95,6 @@
               <p>
                 The component TypeScript files are easy to understand and aren't
                 filled with confusing terms.
-              </p>
-            </li>
-            <li>
-              <p>
-                Angular uses a virtual DOM, which is faster than a real DOM.
               </p>
             </li>
             <li>
@@ -141,6 +132,11 @@
               <p>
                 Each component is divided into 4 files, which can be confusing
                 to keep track of.
+              </p>
+            </li>
+            <li>
+              <p>
+                Angular uses a real DOM, which can be slow as it has to rebuild the DOM every time the page is updated. (See <a href="./ember.html">Ember</a> for an explanation of the virtual DOM)
               </p>
             </li>
           </ul>

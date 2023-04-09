@@ -68,6 +68,12 @@
               is no reference to where it will be inserted.
             </p>
             <p>
+              Ember uses a virtual DOM, which is good because they are more
+              efficient than regular DOMs. This is because unlike regular DOMs,
+              they clone the current DOM, make all the changes and then compare
+              the two and only makes the changes where they differ.
+            </p>
+            <p>
               Templates that are routed are placed after/inside of
               application.hbs. If you would like to create a template for the
               home page to display after the application.hbs, it has to be
@@ -141,8 +147,8 @@
             The code example below is of the base template (application.hbs),
             the template for the enchantments view, and the enchantment list
             module. The enchantments view is placed under the outlet handlebar
-            tag, and the enchantment-list module (which has to be named in
-            kebab case, but referenced in pascal case) is referenced in the
+            tag, and the enchantment-list module (which has to be named in kebab
+            case, but referenced in pascal case) is referenced in the
             enchantment view, with data passed in from the view's JavaScript
             file. The enchantment-list module's JavaScript file also has a
             method that displays an alert with parameters inserted.

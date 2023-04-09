@@ -54,17 +54,39 @@
           <div>
             <h3>Introduction</h3>
             <p>
-              Svelte is a component framework built by Rich Harris. Svelte is different to most other frameworks, because instead of "diffing" the DOM, it compiles your code into efficent code that directly manipulates the DOM. 
+              Svelte is a component framework built by Rich Harris. Svelte is
+              different to most other frameworks, because instead of "diffing"
+              the DOM, it compiles your code into efficent code that directly
+              manipulates the DOM (Harris, 2019).
             </p>
             <h3>How it works</h3>
             <p>
-              When trying out Svelte, I went to their website, which had an interactive tutorial to learn how Svelte's single file components work. I found this to be very helpful, so I thought I was ready to start using Svelte.
-            </p>
-            <p>  
-              I installed the default app from their website, which looked nothing like what I had just been learning, so I looked for a tutorial online. The tutorial I watched cloned a repository from GitHub, which was setup completely different. The default Svelte app's entry point is app.html, which is in the src folder, the content of the body is injected into a div in the body specified by a Svelte variable called %sveltekit.body%. The app from the tutorial has an index.html in the public folder, and there is no indication that anything is injected in the body, but ignoring that, the App.svelte actually looked like what I was learning from the Svelte website interactive tutorial.
+              When trying out Svelte, I went to their website, which had an
+              interactive tutorial to learn how Svelte's single file components
+              work. I found this to be very helpful, so I thought I was ready to
+              start using Svelte.
             </p>
             <p>
-              The components can have a script, style and HTML section, allowing for the HTML, CSS and JavaScript to be in the same file. The style is scoped to the component, so it doesn't affect the rest of the page, which can be useful if you don't live by the philosophy of reusing styles across components.
+              I installed the default app from their website, which looked
+              nothing like what I had just been learning, so I looked for a
+              tutorial online. The tutorial I watched cloned a repository from
+              GitHub, which was setup completely different. The default Svelte
+              app's entry point is app.html, which is in the src folder, the
+              content of the body is injected into a div in the body specified
+              by a Svelte variable called %sveltekit.body%. The app from the
+              tutorial has an index.html in the public folder, and there is no
+              indication that anything is injected in the body, but ignoring
+              that, the App.svelte actually looked like what I was learning from
+              the Svelte website interactive tutorial.
+            </p>
+            <p>
+              The components can have a script, style and HTML section, allowing
+              for the HTML, CSS and JavaScript to be in the same file. The style
+              is scoped to the component, so it doesn't affect the rest of the
+              page, which can be useful if you don't live by the philosophy of
+              reusing styles across components. When you reference a component,
+              it looks like a custom HTML tag with the properties passed in as
+              attributes.
             </p>
           </div>
           <div>
@@ -84,20 +106,29 @@
           <h3>Strengths and Weaknesses</h3>
           <p></p>
           <h4>Strengths</h4>
-          <p>
-            <ul>
-              <li>
-                <p>
-                  Svelte is a compiler, which means that it can be faster than a framework that uses a virtual DOM. 
-                </p>
-              </li>
-              <li>
-                <p>
-                  Svelte is small, and it is easy to learn.
-                </p>
-              </li>
-            </ul>
-          </p>
+          <ul>
+            <li>
+              <p>
+                Svelte is a compiler, which means that it can be faster than a
+                framework that uses a virtual DOM  (Harris, 2019).
+              </p>
+            </li>
+            <li>
+              <p>Svelte is small, and it is easy to learn.</p>
+            </li>
+            <li>
+              <p>
+                Components can have their own style, which is scoped to the
+                component.
+              </p>
+            </li>
+            <li>
+              <p>
+                Referenced components are structured like HTML tags, which makes
+                it easy to understand.
+              </p>
+            </li>
+          </ul>
           <h4>Weaknesses</h4>
           <ul>
             <li>
@@ -107,7 +138,13 @@
             </li>
             <li>
               <p>
-                The community are using their own default app, meaning the Svelte team aren't listening to their community.
+                The community is smaller, so there might not be as many resources available.
+              </p>
+            </li>
+            <li>
+              <p>
+                The community are using their own default app, meaning the
+                Svelte team might not be listening to their community.
               </p>
             </li>
           </ul>
