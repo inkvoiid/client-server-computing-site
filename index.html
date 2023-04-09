@@ -141,7 +141,11 @@
           </h3>
           <p>
             There are different ways to structure your client-server
-            interactions, and they all have their advantages and disadvantages.
+            interactions. This is usually described in layers, the presentation
+            layer being the user interface (what the user is presented with),
+            the application layer which processes and calculates the data, and
+            the data layer which stores and retrieves the data. Each
+            client-server architecture has their advantages and disadvantages.
           </p>
           <h4>1 Tier Architecture</h4>
           <p>
@@ -161,8 +165,8 @@
             This means that many clients can all connect to the server and
             access the same data. The presentation layer is stored on the client
             and the data layer is stored on the server (Sugandhi, 2023). The
-            business layer can either be stored on the client or the server. If
-            it's on the client, it's called a "thick client" because the
+            application layer can either be stored on the client or the server.
+            If it's on the client, it's called a "thick client" because the
             processing is done client-side, and if it's on the server, it's
             called a "thin client" because the server does the processing.
           </p>
@@ -171,39 +175,57 @@
             <p>
               Thick Client Computing (also known as a desktop, fat or heavy
               client) is a style of Client-Server Computing in which the client
-              does most of the processing and data storage client-side
-              (Parallels, 2021). This makes the client feel responsive and have
-              better capability with a limited network connection and is ideal
-              if the server is slow. However, it isn't recommended for mobile or
-              remote clients, as they don't have the processing power or memory
-              capacity to run complex actions.
+              does most of the processing and data storage client-side, even
+              without a network (Parallels, 2021). This makes the client feel
+              responsive and have better capability with a limited network
+              connection and is ideal if the server is slow. However, it isn't
+              recommended for mobile or remote clients, as they don't have the
+              processing power or memory capacity to run complex actions.
             </p>
             <h4>Thin Client Computing</h4>
             <p>
               Thin Client Computing is another style of Client-Server Computing
               that relies mainly on a central server to connect to, to process
               data and store it. This is because the client is usually a mobile
-              device, which doesn't have the processing power to do this. This
-              means that the client can be used anywhere, and the server can be
-              scaled up to handle more clients.
+              device, which is accessing the data from a remote location or
+              doesn't have the processing power to do this (Parallels, 2021).
+              This means that the client can be used anywhere, and the server
+              can be scaled up to handle more clients.
             </p>
           </div>
           <p>
             2 Tier Architecture is the fastest client-server architecture
             because the client and server are in direct communication with each
-            other (Sugandhi, 2023).
+            other (Sugandhi, 2023). This architecture is useful for small
+            websites where there is little processing of the data. 2 Tier
+            Architecture isn't recommended for an app that needs to handle a lot
+            of users and process the data they are sending, as it can slow the
+            server down. Instead you would use a 3 Tier Architecture.
           </p>
           <h4>3 Tier Architecture</h4>
           <p>
-            3 Tier Architecture is where the client and server are separate and
-            on different networks. This is usually used for small applications,
-            such as a calculator.
+            3 Tier Architecture is similar to 2 Tier Architecture, except the
+            application layer is stored a different server to the database
+            layer, so that both the client and server perform better (Sugandhi,
+            2023). This approach can be used to make more complex applications,
+            where you need to separate the data and the processing of the data
+            so the server can handle more users retrieving data. This may be
+            expensive and redundant for smaller applications and can lead to
+            slower response times, as there are more servers to communicate
+            with.
           </p>
           <h4>N Tier Architecture</h4>
           <p>
-            N Tier Architecture is where the client and server are separate and
-            on different networks. This is usually used for small applications,
-            such as a calculator.
+            N Tier Architecture, also known as multi-tier architecture is just
+            like 3 Tier Architecture, except it separates one of the layers into
+            multiple, to reduce the load on the server (Sugandhi, 2023). This
+            could be splitting the application layer to have a caching layer,
+            which stores data that is frequently accessed, so the server doesn't
+            have to process it every time, or it could be a security layer,
+            which checks the data before it is sent to the server. While this
+            architecture seems like a good idea, it can be difficult to
+            implement and maintain, as it can be both complicated and expensive
+            to set up and maintain multiple servers.
           </p>
         </section>
       </article>
