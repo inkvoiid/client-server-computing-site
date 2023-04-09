@@ -124,16 +124,23 @@
             All of the frameworks I looked at use both JavaScript and
             TypeScript, the only exception being Angular, which doesn't
             recommend using JavaScript. This is because Angular is built on
-            TypeScript, so technically you can, but it isn't recommended. Only
-            half of the frameworks I looked at use single file components, this
-            is just due to how they are built. Notably, the three frameworks
-            that don't support single file components are the only ones that
-            allow you to generate components through the CLI natively. This
-            could be because the frameworks that support single file components
-            don't see the need to generate one file through the CLI. Preact is
-            the only framework that supports generating components through the
-            CLI, but not natively, this could be because of what I just
-            mentioned with not needing to generate single files thorugh the CLI.
+            TypeScript, so technically you can, but it isn't recommended.
+          </p>
+          <p>
+            Only half of the frameworks I looked at use single file components:
+            Preact, Svelte and Vue, this is just due to how they are built.
+          </p>
+          <p>
+            Notably, the three frameworks that don't support single file
+            components are the only ones that allow you to generate components
+            through the CLI natively. This could be because the frameworks that
+            support single file components don't see the need to generate one
+            file through the CLI. Preact is the only framework that uses single
+            file components that supports generating components through the CLI,
+            but not natively, this could be because of what I just mentioned
+            with not needing to generate single files thorugh the CLI.
+          </p>
+          <p>
             Only Ember, Preact and Vue use a virtual DOM, this is because most
             of the other frameworks have their own way of rendering the DOM.
             Angular just uses the real DOM, which is why it can be slower.

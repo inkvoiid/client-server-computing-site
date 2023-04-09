@@ -63,21 +63,19 @@
             <p>
               When trying out Svelte, I went to their website, which had an
               interactive tutorial to learn how Svelte's single file components
-              work. I found this to be very helpful, so I thought I was ready to
-              start using Svelte.
+              work. I found this to be very helpful.
             </p>
             <p>
               I installed the default app from their website, which looked
-              nothing like what I had just been learning, so I looked for a
-              tutorial online. The tutorial I watched cloned a repository from
-              GitHub, which was setup completely different. The default Svelte
-              app's entry point is app.html, which is in the src folder, the
-              content of the body is injected into a div in the body specified
-              by a Svelte variable called %sveltekit.body%. The app from the
-              tutorial has an index.html in the public folder, and there is no
-              indication that anything is injected in the body, but ignoring
-              that, the App.svelte actually looked like what I was learning from
-              the Svelte website interactive tutorial.
+              nothing like what I had just been learning, so I had to research
+              into why there was pages that begun with plus symbols. It turns
+              out they are how Svelte knows which components are routable. The
+              pages don't have to be added to a list of routes anywhere, they're
+              automatically picked up by the plus prefix, and then you can just
+              navigate to the folder's path. The default Svelte app's entry
+              point is app.html, which is in the src folder, the content of the
+              body is injected into a div in the body specified by a Svelte
+              variable called %sveltekit.body%.
             </p>
             <p>
               The components can have a script, style and HTML section, allowing
@@ -110,7 +108,7 @@
             <li>
               <p>
                 Svelte is a compiler, which means that it can be faster than a
-                framework that uses a virtual DOM  (Harris, 2019).
+                framework that uses a virtual DOM (Harris, 2019).
               </p>
             </li>
             <li>
@@ -120,6 +118,11 @@
               <p>
                 Components can have their own style, which is scoped to the
                 component.
+              </p>
+            </li>
+            <li>
+              <p>
+                Routed components are automatically picked up, so you don't have to add them to a list of routes.
               </p>
             </li>
             <li>
@@ -138,13 +141,8 @@
             </li>
             <li>
               <p>
-                The community is smaller, so there might not be as many resources available.
-              </p>
-            </li>
-            <li>
-              <p>
-                The community are using their own default app, meaning the
-                Svelte team might not be listening to their community.
+                The community is smaller, so there might not be as many
+                resources available.
               </p>
             </li>
           </ul>
