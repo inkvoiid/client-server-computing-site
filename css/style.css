@@ -18,6 +18,7 @@ body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1rem;
   scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
 }
 
 article {

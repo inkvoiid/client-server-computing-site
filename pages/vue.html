@@ -68,7 +68,8 @@
               to that component. Vue has RouterView and RouterLink tags to
               define where the views are positioned in the base app.vue
               component and to display links that will navigate the RouterView
-              to a specified view.
+              to a specified view. The HTML in the components are inside of
+              template tags, which Vue converts into optimized JavaScript.
             </p>
           </div>
           <div>
@@ -112,7 +113,7 @@
             </li>
             <li>
               <p>
-                Vue doesn't have a built-n state manager, so you have to use a
+                Vue doesn't have a built-in state manager, so you have to use a
                 third party library like Vuex or Pinia.
               </p>
             </li>
@@ -128,19 +129,53 @@
         <section>
           <h3>Example Web App</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing eember. Unde
-            modi vero illum dignissimos soluta nam at veniam quia repellat.
-            Praesentium quia corrupti numquam nam minima amet modi voluptas
-            ratione perferendis? Numquam animi eligendi nobis earum rerum
-            molestias deleniti odio, minima quam, cum aperiam delectus deserunt
-            nihil itaque? Recusandae reiciendis laudantium nesciunt similique,
-            autem, amet ipsam nihil quasi assumenda alias, omnis maiores odit
-            repudiandae ad. Ducimus cupiditate quo a accusamus asperiores
-            perspiciatis voluptatem, quod ea quos fuga! Laborum earum neque,
-            dolor rem hic at ea quasi amet quaerat a architecto voluptatum alias
-            accusamus sequi magni officia aliquid! Voluptates, nesciunt! Qui,
-            nam!
+            Vue was fairly simple to understand, as it's default app came with
+            the Vue Router set up. I had to untangle the mess that was the home
+            page, which was split into many components. I made a site that has a
+            home page, an about page and a page to display The Beatle's albums
+            from a JSON I found online. A lot of the syntax I used regarding the
+            props and JSON I had to look up, with many of the examples online
+            being dissimilar to each other.
           </p>
+          <p>
+            As seen below, (unfortunately in alphabetical order) App.vue
+            contains a site heading and navigation bar, and the RouterView tag
+            which displays the content of the selected view. index.js contains
+            the routes for the views. The home page is the default view, and the
+            about page and albums page are set to a path, which is "lazily"
+            loaded to only load when it is viewed, which is faster than loading
+            all the pages at once, and a good feature for large-scale
+            applications. The home and about pages have minimal content, but the
+            albums page uses a component called Album.vue to generate an image
+            with some text for each album, and the data is pulled from the JSON
+            file and looped through to generate each album.
+          </p>
+          <p>
+            It took a long time to make the default export for the Album.vue
+            component. At first I only had the return part at the top, then the
+            created part and finally to get it working, props. The div has a
+            data-tilt attribute because I was trying to import tilt.js through
+            script tags, but gave up when it stopped working.
+          </p>
+          <p>
+            Some of the conventions such as when you are binding data to an
+            element's attribute, you have to put a colon before the name, and
+            use quotes to reference the data, but when you are binding data to
+            the content of an element such as a paragraph's text, you use double
+            curly braces.
+          </p>
+          <script src="https://gist.github.com/30050248Kaleb/74b576a05f0c4c05c3a93c2b928bbcde.js"></script>
+          <h4>Gallery</h4>
+          <p>The Home Page</p>
+          <img src="../media/images/vue/home.png" alt="Homepage" width="50%" />
+          <p>The About Page</p>
+          <img src="../media/images/vue/about.png" alt="Homepage" width="50%" />
+          <p>The Beatles Albums Page</p>
+          <img
+            src="../media/images/vue/albums.png"
+            alt="Homepage"
+            width="50%"
+          />
         </section>
       </article>
     </main>
